@@ -57,7 +57,7 @@
     }
     .section {
       max-width: 1100px;
-      margin: 40px auto;
+      margin: 60px auto;
       background: white;
       padding: 40px;
       border-radius: 10px;
@@ -95,21 +95,23 @@
       color: white;
       font-size: 0.9rem;
     }
-    .testimonials {
-      display: grid;
-      gap: 20px;
-    }
     .testimonial {
       background: #f0f4ff;
       border-left: 4px solid #0c2d57;
       padding: 15px 20px;
       border-radius: 5px;
+      margin-bottom: 20px;
     }
     .testimonial span {
       display: block;
       margin-top: 8px;
       font-size: 0.9rem;
       color: #555;
+    }
+    .testimonials-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
   </style>
 </head>
@@ -136,15 +138,39 @@
     </ul>
   </div>
 
-  <div class="section testimonials">
+  <div class="section">
     <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      "Outstanding service! They resolved my legal issue faster than I expected. Highly recommended."
-      <span>- Janet M., Startup Founder</span>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        "Outstanding service! They resolved my legal issue faster than I expected. Highly recommended."
+        <span>- Janet M., Startup Founder</span>
+      </div>
+      <div class="testimonial">
+        "Professional, honest, and efficient. Would trust them with my business legal needs again."
+        <span>- Alex T., Business Owner</span>
+      </div>
+      <div class="testimonial">
+        "Dave transformed our outdated law firm page into a sleek, fast-loading landing site that brought in more client calls within the first week!"
+        <span>— J.D. & Co. Legal Partners</span>
+      </div>
     </div>
-    <div class="testimonial">
-      "Professional, honest, and efficient. Would trust them with my business legal needs again."
-      <span>- Alex T., Business Owner</span>
+  </div>
+
+  <div class="section">
+    <h2>📈 Real Results</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+      <div style="flex: 1; min-width: 250px; background-color: #f3f3f3; padding: 20px; border-radius: 10px;">
+        <h3 style="margin-top: 0;">The Problem</h3>
+        <p style="font-size: 15px;">J.D. & Co. had an outdated, slow website that wasn’t converting leads and lacked mobile responsiveness.</p>
+      </div>
+      <div style="flex: 1; min-width: 250px; background-color: #f3f3f3; padding: 20px; border-radius: 10px;">
+        <h3 style="margin-top: 0;">Our Solution</h3>
+        <p style="font-size: 15px;">We built them a one-page lawyer-focused landing site with modern layout, fast load speed, and a clear call to action.</p>
+      </div>
+      <div style="flex: 1; min-width: 250px; background-color: #f3f3f3; padding: 20px; border-radius: 10px;">
+        <h3 style="margin-top: 0;">The Result</h3>
+        <p style="font-size: 15px;">Within 1 week, bounce rate dropped 34%, and they received 3X more client calls via the contact form.</p>
+      </div>
     </div>
   </div>
 
