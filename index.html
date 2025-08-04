@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Law Firm | Book a Free Consultation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smith & Taylor Legal Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      box-sizing: border-box;
     }
-    .header {
-      background: #0c2d57;
-      color: #fff;
-      padding: 40px 20px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f8fc;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0c2d57, #183c73);
+      color: white;
+      padding: 60px 20px;
       text-align: center;
+      position: relative;
     }
-    .header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: white;
+      color: #0c2d57;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
-    .header p {
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
     .cta {
+      margin-top: 20px;
       background: #ff6b00;
       color: white;
-      padding: 15px 25px;
+      padding: 12px 25px;
       border: none;
       font-size: 1rem;
       border-radius: 5px;
@@ -46,6 +55,21 @@
     .cta:hover {
       background: #e85d00;
     }
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      color: #0c2d57;
+    }
+    ul li {
+      margin: 8px 0;
+    }
     form {
       margin-top: 20px;
       display: flex;
@@ -53,27 +77,43 @@
       gap: 15px;
     }
     input, textarea {
-      padding: 10px;
+      padding: 12px;
       font-size: 1rem;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      background: #0c2d57;
+      color: white;
       font-size: 0.9rem;
-      background: #eee;
-      margin-top: 40px;
+    }
+    .testimonials {
+      display: grid;
+      gap: 20px;
+    }
+    .testimonial {
+      background: #f0f4ff;
+      border-left: 4px solid #0c2d57;
+      padding: 15px 20px;
+      border-radius: 5px;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-
-  <div class="header">
+  <header>
+    <div class="logo">S&T</div>
     <h1>Smith & Taylor Legal Group</h1>
     <p>Expert Legal Solutions for Individuals and Businesses</p>
     <button class="cta">Book a Free Consultation</button>
-  </div>
+  </header>
 
   <div class="section">
     <h2>About Us</h2>
@@ -90,19 +130,30 @@
     </ul>
   </div>
 
+  <div class="section testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      "Outstanding service! They resolved my legal issue faster than I expected. Highly recommended."
+      <span>- Janet M., Startup Founder</span>
+    </div>
+    <div class="testimonial">
+      "Professional, honest, and efficient. Would trust them with my business legal needs again."
+      <span>- Alex T., Business Owner</span>
+    </div>
+  </div>
+
   <div class="section">
     <h2>Get in Touch</h2>
     <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
       <textarea placeholder="How can we help you?" rows="4" required></textarea>
       <button type="submit" class="cta">Send Request</button>
     </form>
   </div>
 
   <footer>
-    &copy; 2025 Smith & Taylor Legal Group. All rights reserved.
+    &copy; 2025 Smith & Taylor Legal Group &nbsp;|&nbsp; All rights reserved
   </footer>
-
 </body>
 </html>
